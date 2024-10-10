@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Penilaian Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Aplikasi Penilaian Mahasiswa</h2>
+        <form action="process.php" method="POST">
+            <label>Masukkan Nilai Mata Kuliah 1:</label>
+            <input type="number" name="nilai1" required>
+
+            <label>Masukkan Nilai Mata Kuliah 2:</label>
+            <input type="number" name="nilai2" required>
+
+            <label>Masukkan Nilai Mata Kuliah 3:</label>
+            <input type="number" name="nilai3" required>
+
+            <input type="submit" value="Hitung Rata-rata">
+        </form>
+    </div>
+</body>
+</html>
